@@ -25,11 +25,15 @@ WORKFLOWS=(
 )
 
 CHECKPOINT_MODELS=(
-    "https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16"
+    #PONY 6
     "https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    #PERFECT PONY 6XL
     "https://civitai.com/api/download/models/2114187?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    #CYBER PONY
     "https://civitai.com/api/download/models/2334591?type=Model&format=SafeTensor&size=full&fp=fp32"
+    #waiIllustriousSDXL_v110
     "https://civitai.com/api/download/models/1410435?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+
 )
 
 UNET_MODELS=(
@@ -39,6 +43,9 @@ LORA_MODELS=(
 )
 
 VAE_MODELS=(
+    #"https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors"
+	"https://huggingface.co/NorbyXL/vae/resolve/main/ponyStandardVAE_v10.safetensors"
+	"https://huggingface.co/NorbyXL/vae/resolve/main/vae-ft-MSE(picivel_jobb)-840000-ema-pruned.ckpt"
 )
 
 ESRGAN_MODELS=(
@@ -50,12 +57,13 @@ CONTROLNET_MODELS=(
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
 function provisioning_start() {
+    
     provisioning_print_header
     provisioning_get_apt_packages
     provisioning_get_nodes
     provisioning_get_pip_packages
     provisioning_get_files \
-        "${COMFYUI_DIR}/models/checkpoints" \
+        "${COMFYUI_DIR}/models/ckpt" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_files \
         "${COMFYUI_DIR}/models/unet" \
