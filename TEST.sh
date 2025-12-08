@@ -18,7 +18,8 @@ PIP_PACKAGES=(
 )
  
 NODES=(
-    
+    	"https://github.com/willmiao/ComfyUI-Lora-Manager"
+     
 )
  
 CHECKPOINT_MODELS=(
@@ -30,6 +31,8 @@ CHECKPOINT_MODELS=(
     "https://civitai.com/api/download/models/2334591?type=Model&format=SafeTensor&size=full&fp=fp32"
     #waiIllustriousSDXL_v110
     "https://civitai.com/api/download/models/1410435?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    #Pony 7
+    "https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/safetensor/pony-v7-base.safetensors"
 )
  
 UNET_MODELS=(
@@ -41,16 +44,23 @@ LORA_MODELS=(
      "https://civitai.com/api/download/models/418782?type=Model&format=SafeTensor"
      #PONY - VIXON - Gothic neon
      "https://civitai.com/api/download/models/398847?type=Model&format=SafeTensor"
+     #Cardinal of Sin's Thessics Style (Illustrious)
+     "https://civitai.com/api/download/models/1400602?type=Model&format=SafeTensor"
+     
+     
 )
  
 VAE_MODELS=(
-    "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors"
+   "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors"
   	"https://huggingface.co/NorbyXL/vae/resolve/main/ponyStandardVAE_v10.safetensors"
   	"https://huggingface.co/NorbyXL/vae/resolve/main/vae-ft-MSE(picivel_jobb)-840000-ema-pruned.ckpt"
+   "https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/vae/diffusion_pytorch_model.fp16.safetensors"
 )
  
 ESRGAN_MODELS=(
-    "https://github.com/Phhofm/models/releases/download/4xNomosWebPhoto_RealPLKSR/4xNomosWebPhoto_RealPLKSR.pth"
+    "https://huggingface.co/Phips/4xNomosWebPhoto_RealPLKSR/resolve/main/4xNomosWebPhoto_RealPLKSR.safetensors"
+   	"https://github.com/Phhofm/models/releases/download/4xNomosWebPhoto_RealPLKSR/"
+   	"https://github.com/Phhofm/models/releases/download/4xNomosWebPhoto_RealPLKSR/4xNomosWebPhoto_RealPLKSR.pth"
 )
  
 CONTROLNET_MODELS=(
