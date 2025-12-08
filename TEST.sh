@@ -32,12 +32,12 @@ CHECKPOINT_MODELS=(
     #waiIllustriousSDXL_v110
     "https://civitai.com/api/download/models/1410435?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     #Pony 7
-    "https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/safetensor/pony-v7-base.safetensors"
+    #"https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/safetensor/pony-v7-base.safetensors"
 )
 
 CLIP_MODELS=(
-     "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/resolve/main/ViT-L-14-BEST-smooth-GmP-TE-only-HF-format.safetensors"
-     "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/resolve/main/ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors"
+    "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/resolve/main/ViT-L-14-BEST-smooth-GmP-TE-only-HF-format.safetensors"
+    "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/resolve/main/ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors"
 	"https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q8_0.gguf"
 	"https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/text_encoder/model.fp16.safetensors?download=true"
 )
@@ -70,6 +70,8 @@ ESRGAN_MODELS=(
     "https://huggingface.co/Phips/4xNomosWebPhoto_RealPLKSR/resolve/main/4xNomosWebPhoto_RealPLKSR.safetensors"
    	"https://github.com/Phhofm/models/releases/download/4xNomosWebPhoto_RealPLKSR/"
    	"https://github.com/Phhofm/models/releases/download/4xNomosWebPhoto_RealPLKSR/4xNomosWebPhoto_RealPLKSR.pth"
+	"https://civitai.com/api/download/models/164821?type=Model&format=SafeTensor"
+	
 )
  
 CONTROLNET_MODELS=(
@@ -110,7 +112,7 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/clip" \
         "${CLIP_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/esrgan" \
+        "${WORKSPACE}/ComfyUI/models/upscale_models" \
         "${ESRGAN_MODELS[@]}"
     provisioning_print_end
 }
