@@ -52,6 +52,8 @@ LORA_MODELS=(
      "https://civitai.com/api/download/models/398847?type=Model&format=SafeTensor"
      #Cardinal of Sin's Thessics Style (Illustrious)
      "https://civitai.com/api/download/models/1400602?type=Model&format=SafeTensor"
+	 #Zoom slider XL 01 
+	 "https://civitai.com/models/213307/envy-zoom-slider-xl-01?modelVersionId=240274"
      
      
 )
@@ -95,7 +97,7 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/unet" \
         "${UNET_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/lora" \
+        "${WORKSPACE}/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/controlnet" \
@@ -104,7 +106,7 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/vae" \
         "${VAE_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/clip" \
+        "${WORKSPACE}/ComfyUI/models/clip" \
         "${CLIP_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/esrgan" \
