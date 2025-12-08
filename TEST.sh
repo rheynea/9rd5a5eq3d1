@@ -37,7 +37,10 @@ UNET_MODELS=(
 )
  
 LORA_MODELS=(
-
+     #PONY - CONCEPT ART ULTIMATUM
+     "https://civitai.com/api/download/models/418782?type=Model&format=SafeTensor"
+     #PONY - VIXON - Gothic neon
+     "https://civitai.com/api/download/models/398847?type=Model&format=SafeTensor"
 )
  
 VAE_MODELS=(
