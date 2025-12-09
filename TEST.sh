@@ -6,7 +6,6 @@
  
 # Packages are installed after nodes so we can fix them...
  
-DEFAULT_WORKFLOW="https://raw.githubusercontent.com/Norby123/nord-F1d-VastAI/refs/heads/main/FLUX_for_VastAI.json"
  
 APT_PACKAGES=(
     "aria2"
@@ -19,6 +18,7 @@ PIP_PACKAGES=(
  
 NODES=(
     	"https://github.com/willmiao/ComfyUI-Lora-Manager"
+		"https://github.com/Fannovel16/comfyui_controlnet_aux"
      
 )
  
@@ -32,7 +32,10 @@ CHECKPOINT_MODELS=(
     #waiIllustriousSDXL_v110
     "https://civitai.com/api/download/models/1410435?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     #Pony 7
-    #"https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/safetensor/pony-v7-base.safetensors"
+    "https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/safetensor/pony-v7-base.safetensors"
+	#TRY - AutismMix SDXL (PONY)
+	"https://civitai.com/api/download/models/324619?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+	
 )
 
 CLIP_MODELS=(
