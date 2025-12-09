@@ -17,18 +17,40 @@ PIP_PACKAGES=(
 )
  
 NODES=(
-    	"https://github.com/willmiao/ComfyUI-Lora-Manager"
-		"https://github.com/Fannovel16/comfyui_controlnet_aux"
+	"https://github.com/city96/ComfyUI-GGUF"
+	"https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/mcmonkeyprojects/sd-dynamic-thresholding"
+    "https://github.com/kijai/ComfyUI-KJNodes"
+    "https://github.com/talesofai/comfyui-browser"
+	"https://github.com/rgthree/rgthree-comfy"
+    "https://github.com/yolain/ComfyUI-Easy-Use"
+	"https://github.com/willmiao/ComfyUI-Lora-Manager"
+	"https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait"
+    "https://github.com/Acly/comfyui-inpaint-nodes"
+    "https://github.com/logtd/ComfyUI-Fluxtapoz"
+	"https://github.com/WASasquatch/was-node-suite-comfyui"
+	"https://github.com/Fannovel16/comfyui_controlnet_aux"
+	"https://github.com/TinyTerra/ComfyUI_tinyterraNodes"
+	"https://github.com/cubiq/ComfyUI_IPAdapter_plus"
+	"https://github.com/sipherxyz/comfyui-art-venture"
+	"https://github.com/wallish77/wlsh_nodes"
+	"https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+    "https://github.com/XLabs-AI/x-flux-comfyui"
+	"https://github.com/chrisgoringe/cg-use-everywhere"
+	"https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+	"https://github.com/TheLustriVA/ComfyUI-Image-Size-Tools"
+	"https://github.com/gseth/ControlAltAI-Nodes"	
      
 )
  
 CHECKPOINT_MODELS=(
-     #PONY 6
+    #PONY 6
     "https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     #PERFECT PONY 6XL
     "https://civitai.com/api/download/models/2114187?type=Model&format=SafeTensor&size=pruned&fp=fp16"
-    #CYBER PONY
-    "https://civitai.com/api/download/models/2334591?type=Model&format=SafeTensor&size=full&fp=fp32"
+    #CYBER PONY - realism
+    #"https://civitai.com/api/download/models/2334591?type=Model&format=SafeTensor&size=full&fp=fp32"
     #waiIllustriousSDXL_v110
     "https://civitai.com/api/download/models/1410435?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     #Pony 7
@@ -57,16 +79,14 @@ LORA_MODELS=(
      #Cardinal of Sin's Thessics Style (Illustrious)
      "https://civitai.com/api/download/models/1400602?type=Model&format=SafeTensor"
 	 #Zoom slider XL 01 
-	 "https://civitai.com/models/213307/envy-zoom-slider-xl-01?modelVersionId=240274"
-     
-     
+	 "https://civitai.com/api/download/models/240274?type=Model&format=SafeTensor"
 )
  
 VAE_MODELS=(
-   "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors"
+   	"https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors"
   	"https://huggingface.co/NorbyXL/vae/resolve/main/ponyStandardVAE_v10.safetensors"
   	"https://huggingface.co/NorbyXL/vae/resolve/main/vae-ft-MSE(picivel_jobb)-840000-ema-pruned.ckpt"
-   "https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/vae/diffusion_pytorch_model.fp16.safetensors"
+   	"https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/vae/diffusion_pytorch_model.fp16.safetensors"
 )
  
 ESRGAN_MODELS=(
@@ -78,7 +98,11 @@ ESRGAN_MODELS=(
 )
  
 CONTROLNET_MODELS=(
- 
+  	"https://huggingface.co/Kijai/DepthAnythingV2-safetensors/resolve/main/depth_anything_v2_vitl_fp32.safetensors"
+	"https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors"
+		"https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors"
+		"https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/thibaud_xl_openpose_256lora.safetensors"
+		"https://huggingface.co/stabilityai/control-lora/resolve/main/control-LoRAs-rank256/control-lora-canny-rank256.safetensors"
 )
  
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
