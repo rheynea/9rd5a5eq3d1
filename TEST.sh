@@ -57,6 +57,8 @@ CHECKPOINT_MODELS=(
     "https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/safetensor/pony-v7-base.safetensors"
 	#TRY - AutismMix SDXL (PONY)
 	"https://civitai.com/api/download/models/324619?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+	#WAN
+	"https://civitai.com/api/download/models/2555640?type=Model&format=SafeTensor&size=full&fp=fp8"
 	
 )
 
@@ -65,6 +67,7 @@ CLIP_MODELS=(
     "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/resolve/main/ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors"
 	"https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q8_0.gguf"
 	"https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/text_encoder/model.fp16.safetensors?download=true"
+	"https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
 )
  
 UNET_MODELS=(
@@ -87,6 +90,7 @@ VAE_MODELS=(
   	"https://huggingface.co/NorbyXL/vae/resolve/main/ponyStandardVAE_v10.safetensors"
   	"https://huggingface.co/NorbyXL/vae/resolve/main/vae-ft-MSE(picivel_jobb)-840000-ema-pruned.ckpt"
    	"https://huggingface.co/purplesmartai/pony-v7-base/resolve/main/vae/diffusion_pytorch_model.fp16.safetensors"
+	"https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/blob/main/split_files/vae/wan_2.1_vae.safetensors"
 )
  
 ESRGAN_MODELS=(
