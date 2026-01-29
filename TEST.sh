@@ -98,6 +98,7 @@ ESRGAN_MODELS=(
    	"https://github.com/Phhofm/models/releases/download/4xNomosWebPhoto_RealPLKSR/"
    	"https://github.com/Phhofm/models/releases/download/4xNomosWebPhoto_RealPLKSR/4xNomosWebPhoto_RealPLKSR.pth"
 	"https://civitai.com/api/download/models/164821?type=Model&format=SafeTensor"
+	"https://huggingface.co/Kim2091/2x-AnimeSharpV4/resolve/main/2x-AnimeSharpV4_Fast_RCAN_PU.safetensors"
 	
 )
  
